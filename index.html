@@ -16,7 +16,14 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section>
+				<h2>The Lorenz Equations</h2>
+				\[\begin{aligned}
+				\dot{x} &amp; = \sigma(y-x) \\
+				\dot{y} &amp; = \rho x - y - xz \\
+				\dot{z} &amp; = -\beta z + xy
+				\end{aligned} \]
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
@@ -25,6 +32,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math3/math3.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -33,7 +41,7 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath3 ]
 			});
 		</script>
 	</body>
